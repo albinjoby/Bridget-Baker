@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.image{
+    width: 40vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    -webkit-user-drag: none;
+}
+.image[data-status="inactive"]{
+    display: none;
+}
+.image[data-status="active"]{
+    display: block;
+}
